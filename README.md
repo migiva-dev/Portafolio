@@ -1,6 +1,8 @@
 # Portafolio - Miguel Gavilá Ibañez
 
-Portfolio personal y blog desarrollado con PHP, HTML, CSS
+Portfolio personal y blog desarrollado con PHP, HTML, CSS y MySQL.
+
+Incluye: página de inicio, blog dinámico, formulario de contacto y sección sobre mí.
 
 ## Stack
 
