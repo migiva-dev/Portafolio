@@ -1,26 +1,16 @@
-# Portafolio - Miguel Gavilá Ibañez
+# Portfolio — Miguel Gavila
 
-Portfolio personal y blog desarrollado con PHP, HTML, CSS y MySQL.
+Portfolio personal desarrollado con HTML, CSS y JavaScript vanilla.
 
-Incluye: página de inicio, blog dinámico, formulario de contacto y sección sobre mí.
+## 🚀 Stack
+- HTML5 semántico
+- CSS3 (variables, grid, flexbox)
+- JavaScript ES6+
 
-## Stack
+## 📁 Estructura
+- `index.html` — Página principal
+- `css/styles.css` — Estilos globales
+- `js/main.js` — Lógica e interacciones
 
-In progress
-
-## Estructura del proyecto
-
-In progress
-
-## Instalación local
-
-In progress
-
-## Ramas del proyecto
-
-In progress
-
-## Autor
-
-**Miguel Gavilá Ibánez**
-Desarrollador Web Junior — Fullstack PHP + JS
+## 🌐 Demo
+Próximamente en GitHub Pages.
