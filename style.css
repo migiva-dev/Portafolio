@@ -62,3 +62,18 @@ nav a:hover {
 #inicio p {
   font-size: 1.2rem;
 }
+
+/* TÍTULOS */
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* SOBRE MI, PORTFOLIO, ETC */
+section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+section:nth-child(odd) {
+  background-color: #f0f0f0;
+}
