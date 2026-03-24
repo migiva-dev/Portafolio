@@ -1,25 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Miguel Gavila - Desarrollador Aplicaciones Web" />
-    <title>Mi Portfolio</title>
+    <title>Miguel Gavilá Ibáñez - Currículum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+
+    <header class="main-header">
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#cv" class="active">CV</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
-       
+
+    <div class="cv-wrapper-external" id="cv">
+        <button class="print-btn-cv" onclick="window.print()">🖨️ Imprimir</button>
+        
+        <article class="cv-container">
+            <aside class="sidebar-cv">
+                <div class="photo-wrap-cv">
+                    <img src="img_cv.png" alt="Miguel Gavilá Ibáñez">
+                </div>
+                
+                <div class="sidebar-content-cv">
+                    <section class="side-block">
+                        <h2 class="side-title">CONTACTO</h2>
+                        <div class="contact-item">
+                            <span class="icon">@</span>
+                            <span class="text">miguelgavilaibanez@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">☎</span>
+                            <span class="text">(+34) 648 437 773</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">⌂</span>
+                            <span class="text">Valencia<br>Alrededores de Valencia</span>
+                        </div>
+                    </section>
+
+                    <section class="side-block">
+                        <h2 class="side-title">PERFIL</h2>
+                        <p class="side-text">Me considero una persona constante, responsable y comprometida con los objetivos que asumo. Destaco por mi actitud positiva, mi facilidad para trabajar en equipo y mi disposición para seguir aprendiendo.</p>
+                        <p class="side-text"><strong>Disponibilidad inmediata.</strong><br>Entre semana: media jornada.<br>Fines de semana: jornada completa.</p>
+                    </section>
+
+                    <section class="side-block">
+                        <h2 class="side-title">IDIOMAS</h2>
+                        <div class="lang-row"><span>Español</span><strong>Nativo</strong></div>
+                        <div class="lang-row"><span>Valenciano</span><strong>Nativo</strong></div>
+                        <div class="lang-row"><span>Inglés</span><strong>Avanzado</strong></div>
+                        <div class="lang-row"><span>Francés</span><strong>Básico</strong></div>
+                    </section>
+                </div>
+            </aside>
+
+            <main class="content-cv">
+                <header class="hero-cv">
+                    <h1 class="hero-name">MIGUEL<br>GAVILÁ<br>IBÁÑEZ</h1>
+                    <p class="hero-subtitle">TÉCNICO INFORMÁTICO · DESARROLLADOR WEB</p>
+                </header>
+
+                <div class="content-inner-cv">
+                    <section class="main-block">
+                        <h2 class="main-title">EXPERIENCIA</h2>
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <h3 class="job-title">Técnico Informático</h3>
+                                <span class="job-date">24/06/2024 - Actualidad</span>
+                            </div>
+                            <p class="company-name">UPI Ciutat de les Ciències S.L.</p>
+                            <ul class="cv-list">
+                                <li>Mantenimiento de ordenadores, portátiles y otros dispositivos.</li>
+                                <li>Atención a usuarios para resolver incidencias técnicas.</li>
+                                <li>Instalación de software y actualización de sistemas.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="main-block">
+                        <h2 class="main-title">ESTUDIOS</h2>
+                        <div class="study-row">
+                            <span class="year">2016 - 2020</span>
+                            <p class="description">Educación Secundaria Obligatoria. Colegio Pío XII, Valencia.</p>
+                        </div>
+                        <div class="study-row">
+                            <span class="year">2022 - 2024</span>
+                            <p class="description">Grado Medio en Sistemas Microinformáticos y Redes, Progresa.</p>
+                        </div>
+                        <div class="study-row">
+                            <span class="year">Actualidad</span>
+                            <p class="description">Grado Superior en Desarrollo de Aplicaciones Web, CEAC FP Valencia.</p>
+                        </div>
+                    </section>
+
+                    <section class="main-block">
+                        <h2 class="main-title">HABILIDADES</h2>
+                        <div class="skill-item">
+                            <h3 class="skill-cat">Técnicas</h3>
+                            <p class="skill-text">HTML, CSS, JavaScript, PHP, SQL, Git, Laravel, React, VS Code, Mantenimiento de hardware, Redes TCP/IP, Windows Server, Active Directory, Virtualización y Microsoft Office.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3 class="skill-cat">Personales</h3>
+                            <p class="skill-text">Proactividad, trabajo en equipo, responsabilidad, puntualidad y actitud positiva.</p>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </article>
+    </div>
+
 </body>
 </html>
