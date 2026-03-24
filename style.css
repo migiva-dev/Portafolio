@@ -115,3 +115,64 @@ footer {
   text-align: center;
   padding: 20px;
 }
+/* BOTÓN INICIO */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #05a800;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #055503;
+  transform: scale(1.05);
+}
+
+/* CONTENEDOR GENERAL */
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* PRESENTACIÓN */
+#presentacion {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.texto-presentacion {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* HABILIDADES */
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.skill {
+  background-color: #111;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.skill:hover {
+  background-color: #07d400;
+  transform: translateY(-5px);
+}
