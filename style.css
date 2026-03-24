@@ -72,7 +72,20 @@ nav a:hover {
 /* TÍTULOS */
 h2 {
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background-color: #07d400;
+  bottom: -10px;
+  left: 20%;
+  border-radius: 2px;
 }
 
 /* SOBRE MI, PORTFOLIO, ETC */
