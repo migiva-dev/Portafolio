@@ -4,99 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel Gavilá - Currículum</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+     <header>
         <nav>
             <ul>
-                <li><a href="#cv">Currículum</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="cv-wrapper-external" id="cv">
         <button class="print-btn-cv" onclick="window.print()">🖨️ Imprimir CV</button>
-        
+
         <article class="cv-container">
             <aside class="sidebar-cv">
                 <div class="photo-wrap-cv">
-                    <img src="img_cv.png" alt="Miguel Gavilá">
+                    <img src="img_cv.png" alt="Miguel Gavilá Ibáñez">
                 </div>
+
                 <div class="sidebar-content-cv">
-                    <div class="cv-block-side">
+                    <section class="cv-block-side">
                         <h2 class="side-title-cv">Contacto</h2>
+
                         <div class="contact-item-cv">
                             <span class="contact-icon-cv">@</span>
                             <span class="cv-text-small">miguelgavilaibanez@gmail.com</span>
                         </div>
+
                         <div class="contact-item-cv">
                             <span class="contact-icon-cv">☎</span>
                             <span class="cv-text-small">(+34) 648 437 773</span>
                         </div>
+
                         <div class="contact-item-cv">
                             <span class="contact-icon-cv">⌂</span>
-                            <span class="cv-text-small">Valencia</span>
+                            <span class="cv-text-small">Valencia<br>Alrededores de Valencia</span>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="cv-block-side">
+                    <section class="cv-block-side">
                         <h2 class="side-title-cv">Perfil</h2>
-                        <p class="side-text-cv">Me considero una persona constante, responsable y comprometida. Destaco por mi actitud positiva y facilidad para trabajar en equipo.</p>
-                    </div>
+                        <p class="side-text-cv">
+                            Me considero una persona constante, responsable y comprometida con los objetivos que asumo.
+                            Destaco por mi actitud positiva, mi facilidad para trabajar en equipo y mi disposición para seguir aprendiendo.
+                        </p>
+                        <p class="side-text-cv">
+                            <strong>Disponibilidad inmediata.</strong><br>
+                            Entre semana: media jornada.<br>
+                            Fines de semana: jornada completa.
+                        </p>
+                    </section>
 
-                    <div class="cv-block-side">
+                    <section class="cv-block-side">
                         <h2 class="side-title-cv">Idiomas</h2>
+
                         <div class="lang-row-cv"><span>Español</span><strong>Nativo</strong></div>
                         <div class="lang-row-cv"><span>Valenciano</span><strong>Nativo</strong></div>
                         <div class="lang-row-cv"><span>Inglés</span><strong>Avanzado</strong></div>
-                    </div>
+                        <div class="lang-row-cv"><span>Francés</span><strong>Básico</strong></div>
+                    </section>
                 </div>
             </aside>
 
             <main class="content-cv">
-                <header class="hero-cv">
-                    <h1 class="hero-name-cv">Miguel<br>Gavilá<br>Ibáñez</h1>
-                    <p class="hero-subtitle-cv">Técnico informático · Desarrollador Web</p>
-                </header>
+                <section class="hero-cv">
+                    <h1 class="hero-name-cv">MIGUEL<br>GAVILÁ<br>IBÁÑEZ</h1>
+                    <p class="hero-subtitle-cv">TÉCNICO INFORMÁTICO · DESARROLLADOR WEB</p>
+                </section>
 
                 <div class="content-inner-cv">
-                    <div class="cv-block-main">
+                    <section class="cv-block-main">
                         <h2 class="main-title-cv">Experiencia</h2>
+
                         <div class="item-cv">
                             <div class="item-top-cv">
                                 <h3 class="cv-h3">Técnico Informático</h3>
-                                <span class="item-date-cv">2024 - Actualidad</span>
+                                <span class="item-date-cv">24/06/2024 - Actualidad</span>
                             </div>
                             <p class="item-subtitle-cv">UPI Ciutat de les Ciències S.L.</p>
                             <ul class="cv-list">
-                                <li>Mantenimiento de equipos y sistemas.</li>
-                                <li>Resolución de incidencias técnicas.</li>
+                                <li>Mantenimiento de ordenadores, portátiles y otros dispositivos.</li>
+                                <li>Atención a usuarios para resolver incidencias técnicas.</li>
+                                <li>Instalación de software y actualización de sistemas.</li>
                             </ul>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="cv-block-main">
+                    <section class="cv-block-main">
                         <h2 class="main-title-cv">Estudios</h2>
+
                         <div class="study-row-cv">
-                            <div class="study-year-cv">2022-2024</div>
-                            <div class="study-info-cv">Grado Medio SMR, Progresa.</div>
+                            <div class="study-year-cv">2016 - 2020</div>
+                            <div class="study-info-cv">Educación Secundaria Obligatoria. Colegio Pío XII, Valencia.</div>
                         </div>
+
+                        <div class="study-row-cv">
+                            <div class="study-year-cv">2022 - 2024</div>
+                            <div class="study-info-cv">Grado Medio en Sistemas Microinformáticos y Redes, Progresa.</div>
+                        </div>
+
                         <div class="study-row-cv">
                             <div class="study-year-cv">Actualidad</div>
-                            <div class="study-info-cv">Grado Superior DAW, CEAC FP.</div>
+                            <div class="study-info-cv">Grado Superior en Desarrollo de Aplicaciones Web, CEAC FP Valencia.</div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="cv-block-main">
+                    <section class="cv-block-main">
                         <h2 class="main-title-cv">Habilidades</h2>
-                        <p class="cv-p"><strong>Técnicas:</strong> HTML, CSS, JS, PHP, SQL, Git, Laravel, React, Redes TCP/IP.</p>
-                    </div>
+
+                        <p class="cv-p">
+                            <strong>Técnicas</strong><br>
+                            HTML, CSS, JavaScript, PHP, SQL, Git, Laravel, React, VS Code, Mantenimiento de hardware,
+                            Redes TCP/IP, Windows Server, Active Directory, Virtualización y Microsoft Office.
+                        </p>
+
+                        <p class="cv-p cv-p-spaced">
+                            <strong>Personales</strong><br>
+                            Proactividad, trabajo en equipo, responsabilidad, puntualidad y actitud positiva.
+                        </p>
+                    </section>
                 </div>
             </main>
         </article>
