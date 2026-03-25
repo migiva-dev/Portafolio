@@ -28,3 +28,5 @@ Portfolio/
 ├── style.css           # Hoja de estilos global y responsive
 ├── img-inicio.png      # Imagen principal de cabecera
 └── img_cv.png          # Imagen específica para la sección CV
+
+---
