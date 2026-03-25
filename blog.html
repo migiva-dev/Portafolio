@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Miguel Gavila - Desarrollador Aplicaciones Web" />
-    <title>Mi Portfolio</title>
+    <meta name="description" content="Blog de Miguel Gavila - Tendencias y noticias para desarrolladores web" />
+    <title>Blog · Miguel Gavila</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- HEADER (igual que el resto de páginas) -->
     <header>
         <nav>
             <ul>
@@ -20,6 +22,256 @@
             </ul>
         </nav>
     </header>
+
+    <!-- ===================== BLOG ===================== -->
+
+    <!-- HERO DEL BLOG -->
+    <section id="blog-hero">
+        <div class="blog-hero-inner">
+            <span class="blog-hero-tag">Dev Blog</span>
+            <h1>Tendencias &amp; Noticias</h1>
+            <p>Lo que todo desarrollador web debería saber en <strong>2026</strong></p>
+        </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="blog-main">
+        <div class="blog-wrapper">
+
+            <!-- FILTROS -->
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="herramientas">Herramientas</button>
+                <button class="filter-btn" data-filter="ia">IA & Dev</button>
+            </div>
+
+            <!-- GRID DE ARTÍCULOS -->
+            <div class="blog-grid">
+
+                <!-- ARTÍCULO DESTACADO -->
+                <article class="blog-card blog-card--featured" data-cat="frontend">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=80" alt="TypeScript 2026" loading="lazy">
+                        <span class="blog-card__cat">Frontend</span>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Marzo 2026</span>
+                            <span class="blog-card__read">5 min lectura</span>
+                        </div>
+                        <h2>TypeScript ya no es opcional: es el nuevo estándar</h2>
+                        <p>El ecosistema JS ha hablado. En 2026, escribir JavaScript puro en un proyecto profesional se considera un enfoque legacy. TypeScript es el punto de partida para cualquier equipo serio, tanto en frontend como en backend.</p>
+                        <div class="blog-card__tags">
+                            <span>TypeScript</span>
+                            <span>JavaScript</span>
+                            <span>tRPC</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- ARTÍCULO 2 -->
+                <article class="blog-card" data-cat="frontend">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=700&q=80" alt="React Server Components" loading="lazy">
+                        <span class="blog-card__cat">Frontend</span>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Marzo 2026</span>
+                            <span class="blog-card__read">4 min lectura</span>
+                        </div>
+                        <h2>React Server Components y el giro hacia Server-First</h2>
+                        <p>Años enviando bundles enormes al cliente. En 2026 el péndulo vuelve: renderizado en servidor por defecto, menos JavaScript en el cliente, apps que sienten instantáneas.</p>
+                        <div class="blog-card__tags">
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>SSR</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- ARTÍCULO 3 -->
+                <article class="blog-card" data-cat="ia">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&q=80" alt="IA en el desarrollo" loading="lazy">
+                        <span class="blog-card__cat blog-card__cat--ia">IA & Dev</span>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Febrero 2026</span>
+                            <span class="blog-card__read">6 min lectura</span>
+                        </div>
+                        <h2>IA en el flujo de trabajo: asistente o colaborador?</h2>
+                        <p>Cursor, GitHub Copilot, Claude Code... la IA ya no solo autocompleta. Scaffoldea apps enteras. Pero el 46% de los devs todavía no confía del todo en el output. ¿Cuál es el balance real?</p>
+                        <div class="blog-card__tags">
+                            <span>GitHub Copilot</span>
+                            <span>Cursor</span>
+                            <span>Claude Code</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- ARTÍCULO 4 -->
+                <article class="blog-card" data-cat="herramientas">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=700&q=80" alt="Vite y Turbopack" loading="lazy">
+                        <span class="blog-card__cat blog-card__cat--tools">Herramientas</span>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Febrero 2026</span>
+                            <span class="blog-card__read">3 min lectura</span>
+                        </div>
+                        <h2>Vite y Turbopack: Webpack ya es historia</h2>
+                        <p>Las herramientas de build sin configuración están ganando. Vite, Parcel y Turbopack han convertido Webpack en un ejercicio de nostalgia. El criterio en 2026 es claro: si ralentiza, se elimina.</p>
+                        <div class="blog-card__tags">
+                            <span>Vite</span>
+                            <span>Turbopack</span>
+                            <span>Build Tools</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- ARTÍCULO 5 -->
+                <article class="blog-card" data-cat="backend">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80" alt="Edge Computing" loading="lazy">
+                        <span class="blog-card__cat blog-card__cat--backend">Backend</span>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Enero 2026</span>
+                            <span class="blog-card__read">5 min lectura</span>
+                        </div>
+                        <h2>Edge Computing: computación más cerca del usuario</h2>
+                        <p>En lugar de que cada request viaje a un datacenter central, los edge nodes resuelven lo que pueden localmente. Cloudflare Workers y AWS Lambda@Edge están redefiniendo lo que es posible en rendimiento global.</p>
+                        <div class="blog-card__tags">
+                            <span>Edge</span>
+                            <span>Cloudflare Workers</span>
+                            <span>Serverless</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- ARTÍCULO 6 -->
+                <article class="blog-card" data-cat="frontend">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=700&q=80" alt="CSS nativo 2026" loading="lazy">
+                        <span class="blog-card__cat">Frontend</span>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Enero 2026</span>
+                            <span class="blog-card__read">4 min lectura</span>
+                        </div>
+                        <h2>CSS nativo en 2026: nesting, variables y matemáticas sin preprocesador</h2>
+                        <p>Nesting nativo, custom properties, <code>@layer</code>, <code>container queries</code>... El CSS moderno hace lo que antes solo podía SASS. La adopción de vanilla CSS subió un tercio en el último año.</p>
+                        <div class="blog-card__tags">
+                            <span>CSS</span>
+                            <span>Container Queries</span>
+                            <span>@layer</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- ARTÍCULO 7 -->
+                <article class="blog-card" data-cat="backend">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=700&q=80" alt="Headless CMS" loading="lazy">
+                        <span class="blog-card__cat blog-card__cat--backend">Backend</span>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Diciembre 2025</span>
+                            <span class="blog-card__read">4 min lectura</span>
+                        </div>
+                        <h2>Headless CMS: cuando el backend se adapta al frontend</h2>
+                        <p>Strapi, Sanity, Contentful... La arquitectura API-first y headless desacopla completamente la experiencia de usuario del backend. El frontend ya no compromete su diseño por culpa del CMS.</p>
+                        <div class="blog-card__tags">
+                            <span>Headless CMS</span>
+                            <span>Sanity</span>
+                            <span>API-First</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- ARTÍCULO 8 -->
+                <article class="blog-card" data-cat="ia">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=700&q=80" alt="React Compiler" loading="lazy">
+                        <span class="blog-card__cat blog-card__cat--ia">IA & Dev</span>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Diciembre 2025</span>
+                            <span class="blog-card__read">3 min lectura</span>
+                        </div>
+                        <h2>React Compiler v1.0: adiós a useMemo y useCallback manuales</h2>
+                        <p>Tras su lanzamiento en octubre de 2025, el React Compiler está ganando adopción rápidamente. Ya no hace falta escribir código orientado a la optimización: el compilador lo maneja solo en tiempo de build.</p>
+                        <div class="blog-card__tags">
+                            <span>React</span>
+                            <span>React Compiler</span>
+                            <span>Performance</span>
+                        </div>
+                        <a href="#" class="blog-card__link">Leer más →</a>
+                    </div>
+                </article>
+
+            </div>
+            <!-- /blog-grid -->
+
+        </div>
+        <!-- /blog-wrapper -->
+    </main>
+
+    <!-- FOOTER (igual que el resto de páginas) -->
+    <footer>
+        <p>&copy; 2026 Miguel Gavila · Todos los derechos reservados</p>
+    </footer>
+
+    <!-- MODAL DE IMAGEN (reutilizado del global) -->
+    <div class="image-modal" id="imageModal">
+        <img src="" alt="" class="image-modal-content" id="modalImg">
+        <button class="image-modal-close" onclick="closeModal()">Cerrar</button>
+    </div>
+
+    <!-- JS DEL BLOG -->
+    <script>
+        /* Filtros del blog */
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.blog-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                cards.forEach(card => {
+                    if (filter === 'all' || card.dataset.cat === filter) {
+                        card.style.display = '';
+                        card.style.animation = 'fadeInUp 0.35s ease forwards';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        /* Modal imagen */
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>
