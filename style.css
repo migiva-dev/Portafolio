@@ -673,23 +673,75 @@ footer {
 }
 
 /* =========================
-   PORTFOLIO 
+   PORTFOLIO
    ========================= */
 
-/* =========================
-   PORTFOLIO 
-   ========================= */
+/* --- HERO DEL PORTFOLIO --- */
+
+#portfolio-hero {
+  background: linear-gradient(135deg, #111 0%, #1a2a1a 60%, #0d1f0d 100%);
+  padding: 90px 20px 70px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#portfolio-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 40% 50%, rgba(7, 212, 0, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.portfolio-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-hero-tag {
+  display: inline-block;
+  background: rgba(7, 212, 0, 0.15);
+  color: #07d400;
+  border: 1px solid rgba(7, 212, 0, 0.3);
+  padding: 5px 16px;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+#portfolio-hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+#portfolio-hero p {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+#portfolio-hero p strong {
+  color: #07d400;
+}
+
+/* --- SECCIÓN PRINCIPAL --- */
 
 #portfolio-page {
-  padding: 80px 20px;
-  background: #f9f9f9;
+  padding: 60px 20px 80px;
+  background: #f5f5f5;
 }
 
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 28px;
-  margin-top: 30px;
+  margin-top: 0;
 }
 
 /* TARJETA */
@@ -718,8 +770,6 @@ footer {
   height: 340px;
   overflow: hidden;
   flex-shrink: 0;
-
-  /* 🔥 CENTRADO REAL */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -729,10 +779,7 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  /* 🔥 CLAVE: centra la imagen */
   object-position: center center;
-
   display: block;
   transition: transform 0.4s ease;
   cursor: zoom-in;
@@ -742,7 +789,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* (Opcional: ajuste fino por proyecto) */
 .project-card:nth-child(1) .project-cover img {
   object-position: center center;
 }
@@ -783,7 +829,6 @@ footer {
   line-height: 1.2;
   margin-bottom: 10px;
   color: #1f2a37;
-
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -796,7 +841,6 @@ footer {
   color: #666;
   margin-bottom: 14px;
   line-height: 1.5;
-
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -831,10 +875,7 @@ footer {
   width: 33%;
   height: 60px;
   object-fit: cover;
-
-  /* 🔥 centrado también aquí */
   object-position: center center;
-
   border-radius: 8px;
   cursor: zoom-in;
   transition: transform 0.3s ease;
@@ -865,7 +906,7 @@ footer {
 }
 
 /* =========================
-   MODAL 
+   MODAL
    ========================= */
 
 .image-modal {
@@ -887,7 +928,7 @@ footer {
   max-height: 80vh;
   border-radius: 14px;
   object-fit: contain;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
 .image-modal-close {
@@ -906,7 +947,7 @@ footer {
 }
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE PORTFOLIO
    ========================= */
 
 @media (max-width: 900px) {
@@ -935,6 +976,10 @@ footer {
 
   .project-video video {
     height: auto;
+  }
+
+  #portfolio-hero h1 {
+    font-size: 2rem;
   }
 }
 
@@ -1233,7 +1278,7 @@ footer {
   font-weight: 700;
   color: #07d400;
   text-decoration: none;
-  transition: color 0.2s ease, gap 0.2s;
+  transition: color 0.2s ease;
 }
 
 .blog-card__link:hover {
