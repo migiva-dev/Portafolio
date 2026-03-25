@@ -2,12 +2,10 @@
 
 Portfolio personal, blog y CV desarrollado con tecnologías web nativas. Desplegado y optimizado para **GitHub Pages**.
 
-## 🌐 Demo en Vivo
-Puedes visitar el proyecto funcionando aquí:  
-👉 **[https://migiva-dev.github.io/Portafolio/](https://migiva-dev.github.io/Portafolio)**
+## 🌐 Enlaces del Proyecto
+* **Demo en Vivo:** [https://migiva-dev.github.io/Portafolio/](https://migiva-dev.github.io/Portafolio/)
+* **Repositorio GitHub:** [https://github.com/migiva-dev/Portafolio/](https://github.com/migiva-dev/Portafolio/)
 
-Puedes visitar el proyecto y su código aquí:
-👉 **[https://github.com/migiva-dev/Portafolio/](https://github.com/migiva-dev/Portafolio)**
 ---
 
 ## 🛠️ Stack
@@ -30,7 +28,3 @@ Portfolio/
 ├── style.css           # Hoja de estilos global y responsive
 ├── img-inicio.png      # Imagen principal de cabecera
 └── img_cv.png          # Imagen específica para la sección CV
-
-```
-
----
