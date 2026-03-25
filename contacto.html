@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portfolio</title>
+    <meta name="description" content="Contacto - Miguel Gavila · Desarrollador de Aplicaciones Web">
+    <title>Contacto | Miguel Gavila</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
@@ -20,14 +22,20 @@
         </nav>
     </header>
 
+    <!-- HERO CONTACTO -->
+    <section id="contacto-hero">
+        <div class="contacto-hero-inner">
+            <h1>Contacto</h1>
+            <p>¿Tienes un proyecto en mente o quieres charlar? <strong>Escríbeme</strong></p>
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
     <main class="contacto-container">
-        <section id="contacto-head">
-            <h2>Contacto</h2>
-            <p>¿Tienes algún proyecto en mente o quieres charlar? ¡Escríbeme!</p>
-        </section>
 
         <section class="formulario-seccion">
             <form action="#" method="POST" class="contacto-form">
+
                 <div class="input-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
@@ -49,12 +57,15 @@
                 </div>
 
                 <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+
             </form>
         </section>
+
     </main>
 
     <footer>
-        <p>©2026 Mi Portfolio </p>
+        <p>&copy; 2026 Miguel Gavila · Todos los derechos reservados</p>
     </footer>
+
 </body>
 </html>

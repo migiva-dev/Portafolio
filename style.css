@@ -1339,3 +1339,74 @@ footer {
     font-size: 0.8rem;
   }
 }
+
+/* =========================
+   CONTACTO
+   ========================= */
+
+/* --- HERO DEL CONTACTO --- */
+
+#contacto-hero {
+  background: linear-gradient(135deg, #111 0%, #1a2a1a 60%, #0d1f0d 100%);
+  padding: 90px 20px 70px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#contacto-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 60%, rgba(7, 212, 0, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.contacto-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.contacto-hero-tag {
+  display: inline-block;
+  background: rgba(7, 212, 0, 0.15);
+  color: #07d400;
+  border: 1px solid rgba(7, 212, 0, 0.3);
+  padding: 5px 16px;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+#contacto-hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+#contacto-hero p {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+#contacto-hero p strong {
+  color: #07d400;
+}
+
+/* El main del contacto tiene un margen superior limpio tras el hero */
+#contacto-hero + .contacto-container {
+  margin-top: 50px;
+}
+
+/* --- RESPONSIVE CONTACTO --- */
+
+@media (max-width: 600px) {
+  #contacto-hero h1 {
+    font-size: 2rem;
+  }
+}
