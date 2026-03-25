@@ -671,3 +671,158 @@ footer {
     text-align: left;
   }
 }
+/* =========================
+   PORTFOLIO MODERNO
+   ========================= */
+
+#portfolio-page {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #f5f5f5 0%, #ececec 100%);
+}
+
+.portfolio-intro {
+  max-width: 760px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.project-cover {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: #111;
+}
+
+.project-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-cover img {
+  transform: scale(1.04);
+}
+
+.project-content {
+  padding: 28px;
+  text-align: left;
+}
+
+.project-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background-color: #eafbe8;
+  color: #05a800;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.project-content p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.project-tech span {
+  background-color: #111;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-gallery img:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn-dark {
+  background-color: #111;
+}
+
+.btn-dark:hover {
+  background-color: #222;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .project-cover {
+    height: 220px;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery img {
+    height: 180px;
+  }
+
+  .project-content {
+    padding: 22px;
+  }
+
+  .project-content h3 {
+    font-size: 1.5rem;
+  }
+}
