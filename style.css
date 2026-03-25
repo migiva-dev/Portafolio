@@ -1398,7 +1398,7 @@ footer {
   color: #07d400;
 }
 
-/* El main del contacto tiene un margen superior limpio tras el hero */
+
 #contacto-hero + .contacto-container {
   margin-top: 50px;
 }
