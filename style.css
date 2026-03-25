@@ -484,18 +484,38 @@ footer {
 
 .print-btn-cv {
   position: fixed;
-  top: 100px;
-  right: 30px;
+  bottom: 25px;
+  right: 25px;
   z-index: 2000;
+
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+
   background: #15242b;
   color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 50px;
-  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.3rem;
+  font-weight: 700;
   cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
 }
 
+.print-btn-cv:hover {
+  background: #07d400;
+  transform: translateY(-3px) scale(1.05);
+}
+
+.print-btn-cv:active {
+  transform: scale(0.97);
+}
 /* =========================
    CORRECCIÓN MUY IMPORTANTE
    ========================= */
