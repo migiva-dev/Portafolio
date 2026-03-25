@@ -4,7 +4,7 @@ Portfolio personal, blog y CV desarrollado con tecnologías web nativas. Despleg
 
 ## 🌐 Demo en Vivo
 Puedes visitar el proyecto funcionando aquí:  
-👉 **[https://migiva-dev.github.io/TU-REPOSITORIO/](https://migiva-dev.github.io/TU-REPOSITORIO/)**
+👉 **[https://migiva-dev.github.io/Portafolio/](https://github.com/migiva-dev/Portafolio)**
 
 ---
 
