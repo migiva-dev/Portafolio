@@ -672,157 +672,129 @@ footer {
   }
 }
 /* =========================
-   PORTFOLIO MODERNO
+   PORTFOLIO 
    ========================= */
 
-#portfolio-page {
-  padding: 80px 20px;
-  background: linear-gradient(180deg, #f5f5f5 0%, #ececec 100%);
-}
 
-.portfolio-intro {
-  max-width: 760px;
-  margin: 0 auto 50px auto;
-  text-align: center;
-  color: #555;
-  font-size: 1.05rem;
+#portfolio-page {
+    padding: 80px 20px;
+    background: #f9f9f9;
 }
 
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 35px;
+    display: grid;
+    /* Cambiado a 2 columnas en escritorio */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    gap: 40px;
+    margin-top: 20px;
 }
 
 .project-card {
-  background: #ffffff;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-.project-cover{
-  width: 100%;
-  height: 310px;
-  overflow: hidden;
-  background: #111;
+.project-cover {
+    height: 250px;
+    overflow: hidden;
 }
 
 .project-cover img {
-  width: 100%;
-  height: 120%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.project-card:hover .project-cover img {
-  transform: scale(1.04);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-content {
-  padding: 28px;
-  text-align: left;
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-tag {
-  display: inline-block;
-  margin-bottom: 12px;
-  padding: 6px 14px;
-  border-radius: 20px;
-  background-color: #eafbe8;
-  color: #05a800;
-  font-size: 0.85rem;
-  font-weight: 600;
+    align-self: flex-start;
+    background: #eafbe8;
+    color: #05a800;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .project-content h3 {
-  font-size: 1.8rem;
-  margin-bottom: 12px;
-  color: #111;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .project-content p {
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 22px;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
 }
 
 .project-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
 }
 
 .project-tech span {
-  background-color: #111;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 18px;
-  font-size: 0.88rem;
-  font-weight: 500;
+    font-size: 0.75rem;
+    background: #f0f0f0;
+    color: #333;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-weight: 600;
 }
 
+/* Galería de miniaturas */
 .project-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .project-gallery img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 14px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 100%;
+    height: 80px; /* Tamaño fijo para orden visual */
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.project-gallery img:hover {
-  transform: scale(1.03);
-  opacity: 0.95;
+/* Video responsivo dentro de la card */
+.project-video video {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .project-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+    margin-top: auto; /* Empuja los botones al fondo de la card */
 }
 
-.btn-dark {
-  background-color: #111;
-}
-
-.btn-dark:hover {
-  background-color: #222;
-}
-
-/* RESPONSIVE */
+/* Ajustes para móviles */
 @media (max-width: 768px) {
-  .project-cover {
-    height: 220px;
-  }
-
-  .project-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .project-gallery img {
-    height: 180px;
-  }
-
-  .project-content {
-    padding: 22px;
-  }
-
-  .project-content h3 {
-    font-size: 1.5rem;
-  }
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        max-width: 100%;
+    }
 }
