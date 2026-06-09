@@ -529,19 +529,29 @@ footer {
    IMPRESIÓN
    ========================= */
 
+/*
+  Esta parte está ajustada para que el CV no se corte al imprimir.
+  Importante al imprimir desde Chrome/Edge:
+  - Activar "Gráficos de fondo"
+  - Escala: 100% o "Predeterminado"
+  - Tamaño papel: A4
+*/
+
 @page {
   size: A4;
   margin: 8mm;
 }
 
 @media print {
+
   html,
   body {
-    width: 194mm;
-    height: 281mm;
+    width: auto !important;
+    height: auto !important;
     margin: 0 !important;
     padding: 0 !important;
     background: white !important;
+    overflow: visible !important;
   }
 
   header,
@@ -553,27 +563,30 @@ footer {
   }
 
   .page-wrap {
-    width: 210mm !important;
-    height: 297mm !important;
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
     padding: 0 !important;
     margin: 0 !important;
-    min-height: auto !important;
     background: white !important;
-    display: block !important;
-    overflow: hidden !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    overflow: visible !important;
   }
 
   #cv,
   .page-sheet {
-    width: 210mm !important;
-    height: 297mm !important;
-    min-height: 297mm !important;
-    max-height: 297mm !important;
-    margin: 0 !important;
+    width: 194mm !important;
+    height: 281mm !important;
+    min-height: 281mm !important;
+    max-height: 281mm !important;
+    margin: 0 auto !important;
     box-shadow: none !important;
     overflow: hidden !important;
     break-inside: avoid !important;
     page-break-inside: avoid !important;
+    background: #f7f7f7 !important;
   }
 
   .two-column {
@@ -587,43 +600,115 @@ footer {
   }
 
   .media-top {
-    height: 260px !important;
+    height: 238px !important;
   }
 
   .panel-body {
-    padding: 24px !important;
+    padding: 18px 20px !important;
   }
 
   .hero-box {
-    padding: 32px 30px !important;
+    padding: 26px 28px !important;
   }
 
   .content-box {
-    padding: 28px 30px !important;
+    padding: 22px 28px !important;
   }
 
   .hero-title {
-    font-size: 3.2rem !important;
+    font-size: 2.85rem !important;
     line-height: 0.9 !important;
   }
 
   .hero-subtitle {
-    font-size: 0.9rem !important;
-    line-height: 1.4 !important;
+    font-size: 0.78rem !important;
+    line-height: 1.3 !important;
+    margin-top: 8px !important;
   }
 
-  .text-small,
-  .list-clean li,
-  .timeline-content,
-  .timeline-date,
-  .item-title,
-  .item-subtitle,
+  .section-title {
+    font-size: 0.98rem !important;
+    margin-bottom: 9px !important;
+  }
+
+  .section-title::before {
+    width: 36px !important;
+    height: 3px !important;
+    margin-bottom: 7px !important;
+  }
+
+  .text-small {
+    font-size: 0.74rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .list-clean {
+    padding-left: 16px !important;
+  }
+
+  .list-clean li {
+    font-size: 0.74rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 2px !important;
+  }
+
+  .item-title {
+    font-size: 0.84rem !important;
+    line-height: 1.25 !important;
+  }
+
   .item-date {
-    line-height: 1.4 !important;
+    font-size: 0.68rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .item-subtitle {
+    font-size: 0.78rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .timeline-row {
+    grid-template-columns: 76px 1fr !important;
+    gap: 10px !important;
+    margin-bottom: 7px !important;
+  }
+
+  .timeline-date {
+    font-size: 0.7rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .timeline-content {
+    font-size: 0.74rem !important;
+    line-height: 1.32 !important;
   }
 
   .stack-lg {
-    gap: 28px !important;
+    gap: 20px !important;
+  }
+
+  .info-item {
+    gap: 8px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .icon-circle {
+    width: 17px !important;
+    height: 17px !important;
+    font-size: 0.6rem !important;
+  }
+
+  .bordered-row {
+    padding: 4px 0 !important;
+  }
+
+  .mt-sm {
+    margin-top: 8px !important;
+  }
+
+  .mt-md {
+    margin-top: 12px !important;
   }
 
   .timeline-row,
