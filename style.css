@@ -530,11 +530,12 @@ footer {
    ========================= */
 
 /*
-  Esta parte está ajustada para que el CV no se corte al imprimir.
-  Importante al imprimir desde Chrome/Edge:
+  Ajustado para que el CV NO se corte al imprimir.
+  Al imprimir desde Chrome/Edge:
   - Activar "Gráficos de fondo"
   - Escala: 100% o "Predeterminado"
   - Tamaño papel: A4
+  - Márgenes: Mínimo o Ninguno
 */
 
 @page {
@@ -569,34 +570,37 @@ footer {
     padding: 0 !important;
     margin: 0 !important;
     background: white !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
+    display: block !important;
     overflow: visible !important;
   }
 
+  /* =====================================================
+     CORRECCIÓN PRINCIPAL: se eliminan height y max-height
+     fijos, y se cambia overflow a visible para que el
+     contenido no quede cortado al imprimir.
+     ===================================================== */
   #cv,
   .page-sheet {
     width: 194mm !important;
-    height: 281mm !important;
-    min-height: 281mm !important;
-    max-height: 281mm !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
     margin: 0 auto !important;
     box-shadow: none !important;
-    overflow: hidden !important;
-    break-inside: avoid !important;
-    page-break-inside: avoid !important;
+    overflow: visible !important;
     background: #f7f7f7 !important;
   }
 
   .two-column {
     display: grid !important;
     grid-template-columns: 37% 63% !important;
+    align-items: stretch !important;
   }
 
   .panel-dark,
   .panel-light {
-    overflow: hidden !important;
+    overflow: visible !important;
+    height: auto !important;
   }
 
   .media-top {
@@ -1483,7 +1487,6 @@ footer {
   color: #07d400;
 }
 
-
 #contacto-hero + .contacto-container {
   margin-top: 50px;
 }
@@ -1495,6 +1498,7 @@ footer {
     font-size: 2rem;
   }
 }
+
 /* ICONOS REDES SOCIALES */
 .social-icons {
   display: flex;
